@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+</head>
+
+<body>
+        <div id="output"></div>
+        <button class="num69" onclick="setNum69()">set 69</button>
+        <button class="num42" onclick="setNum42()">set 42</button>
+        <button class="add" onclick="addNum()">add number</button>
+        <button class="remove" onclick="removeNum()">remove number</button>
+    
+
+    <script>
+        var outputDiv = document.getElementById('output');
+        var numToShow = 0;
+
+        function setNum69() {
+            numToShow = 69;
+            outputDiv.innerHTML = numToShow;
+        }
+
+
+        function setNum42() {
+            numToShow = 42;
+            outputDiv.innerHTML = numToShow;
+        }
+
+
+        function addNum() {
+            numToShow++;
+            outputDiv.innerHTML = numToShow;
+
+        }
+
+        function removeNum() {
+            numToShow--;
+            outputDiv.innerHTML = numToShow;
+        }
+    </script>
+
+<style>
+    .num69{
+background-color: rgb(85, 23, 85);
+color: olive;
+border-radius: 100px;
+}
+
+.num42{
+    background-color: rgb(212, 125, 11);
+color: rgb(14, 209, 128);
+border-radius: 100px;
+}
+
+.add{
+    background-color: blueviolet;
+color: aqua;
+border-radius: 100px;
+}
+
+.remove{
+    background-color: orange;
+color: firebrick;
+border-radius: 100px;
+}
+
+body{
+    display: flex;
+    flex-direction: column;
+    width: 69px;
+}
+
+</style>
+</body>
+
+</html>
